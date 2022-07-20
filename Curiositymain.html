@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+    <head>
+        <title>Curiosity</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" 
+            integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" 
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+        <!-- above link is ti link icons of social media in footer -->
+        <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header{
+        height: 106px;
+        width: 100%;
+        background-color: rgba(10, 9, 9, 0.911);
+        overflow: hidden;
+        /* position: sticky;
+        top: 0px; */
+        }
+       
+        .hlogo{
+        position: absolute;
+        margin-left: 10px;
+        margin-top: 10px;
+        width: 210px;
+        height: 100px;
+        overflow: hidden;
+        }
+        .haboutus{
+        position: absolute;
+        left: 250px;
+        top: 35px;
+        width: 700px;
+        font-size: 20px;
+        overflow: hidden;
+        }
+        .hcustomercorner{
+        position: absolute;
+        right: 50px;
+        top: 25px
+    
+        }
+        a{
+        color: #fff;
+        font-weight: bold;
+        font-size:larger;
+        font-family: 'Times New Roman', Times, serif;
+        margin: 5px;
+    
+        }
+
+        .container{
+            width: 100%;
+            height: 100vh;
+            background: #222;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        #TIModelName{
+            position: absolute;
+            margin-top: 100px;
+            margin-left: 100px;
+            font-size: 80px;
+            color: #fff;
+        }
+        #TIModelQuote{
+            position: absolute;
+            margin-top: 190px;
+            margin-left: 100px;
+            font-size: 50px;
+            color: #fff;
+        }
+
+        .swiper{
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-slide img{
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper .swiper-button-next, .swiper .swiper-button-prev{
+            color: #fff;
+        }
+
+        .swiper .swiper-pagination-bullet-active{
+            background: #fff;
+        }
+
+
+
+
+        .topmodels{
+        height: 880px;
+        width: 500px;
+        margin-top: 0%;
+        margin-left: 200px;
+        color: white;
+        }
+        .allmodelsframe img{
+        position: absolute;
+        width: 100%;
+        height: 880px;
+        }
+        .allmodels{
+        position: absolute;
+        margin-top: 125px;
+        font-size: 60px;
+        font-family: Arial, Helvetica, sans-serif;
+        }
+        .shift{
+        position: absolute;
+        margin-top: 255px;
+        margin-left: 5px;
+        }
+        #next{
+            margin-top: 200px;
+            margin-left: 10px;
+        }
+        #prev{
+            margin-top: 200px;
+            margin-left: 50px;
+        }
+        #plus{
+            margin-top: 510px;
+        }
+        .modelname{
+        position: absolute;
+        font-size: 100px;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-top: 400px;
+        }
+        .modelquote{
+        position: absolute;
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-top: 510px;
+        margin-left: 50px;
+        }
+
+
+        .costomizedcars{
+            height: 900px;
+            width: 100%;
+        }
+        .costomizedcars img{
+            height: 880px;
+            width: 100%;
+        }
+        .costcars{
+            position: absolute;
+        }
+        #heading{
+            margin-left: 100px;
+            margin-top: 160px;
+            font-size: 50px;
+        }
+        #body{
+            margin-top: 200px;
+            margin-left: 100px;
+            font-size: 70px;
+        }
+        #backtext{
+            margin-top: 280px;
+            margin-left: 20px;
+            font-size: 150px;
+            font-weight: lighter;
+            
+        }
+
+
+
+
+        .newsandachivements{
+            margin-left: 100px;
+            margin-right: 100px;
+        }
+        .newsandachivements img{
+            width: 100%;
+        }
+        #naa{
+            font-size: 30px;
+        }
+        #cu{
+            font-size: 100px;
+            width: 100%;
+        }
+        #weare{
+            font-size: 20px;
+            margin-left: 900px;
+        }
+
+        #date{
+            margin-top: 20px;
+            font-size: 30px;
+        }
+        #headline{
+            font-size: 40px;
+        }
+        #headlinedetails{
+            font-size: 20px;
+        }
+        .Readmore{
+            margin-left: 0px;
+            margin-top: 10px;
+        }
+
+
+        .news{
+            height: 400px;
+            margin-top: 50px;
+        } 
+        .news img{
+            height: 300px;
+            width: 600px;
+        }
+        #mdate{
+            position: absolute;
+            display: inline-block;
+            font-size: 30px;
+            margin-left: 20px;
+        }
+        #mheadline{
+            position: absolute;
+            display: inline-block;
+            font-size: 38px;
+            margin-left: 20px;
+            margin-right: 200px;
+            margin-top: 35px;
+        }
+        #mheadlinedetails{
+            position: absolute;
+            display: inline-block;
+            font-size: 20px;
+            margin-left: 20px;
+            margin-right: 200px;
+            margin-top: 80px;
+        }
+        .mReadmore{
+            position: absolute;
+            display: inline-block;
+            margin-left: 20px;
+            margin-top: 150px;
+        }
+
+
+        .RReadmore{
+            margin-left: 550px;
+            height: 40px;
+            width: 200px;
+            color: #fff;
+            background-color: rgba(10, 9, 9, 0.911);
+            border-radius: 10px;
+        }
+
+
+
+
+        footer{
+        position: relative;
+        margin-top: 100px;
+        height: 350px;
+        width: 100%;
+        background-color: rgba(10, 9, 9, 0.911);
+        } 
+        #middlelogo{
+            position: absolute;
+            margin-top: 20px;
+            margin-left: 650px;
+            height: 70px;
+            width: 200px;
+            overflow: hidden;
+        }
+        .mlt{
+            position: absolute;
+            font-size: 60px;
+            color: #fff;
+            margin-top: 50px;
+            margin-left: 50px;
+        }
+        #middlelogo img{
+            height: 70px;
+            width: 200px;
+        }  
+        #lefttitle{
+            position: absolute;
+            margin-top: 250px;
+            margin-left: 20px;
+        }
+        .llt{
+            position: absolute;
+            font-size: 60px;
+            color: #fff;
+            font-family: cursive;
+        }
+        .llts{
+            position: absolute;
+            font-size: 10px;
+            color: #fff;
+            font-family: cursive;
+            margin-top: 70px;
+            margin-left: 120px;
+        }
+        #middlecont{
+            position: absolute;
+            margin-left: 300px;
+            margin-top: 100px;
+            color: white;
+            font-size: 20px;
+        }
+        @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+        .rightsocial{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins',sans-serif;
+            position: absolute;
+            margin-top: 100px;
+            margin-left: 1400px;
+        }
+        .sociallink{
+            /* display: inline-block;
+            float: left; */
+            /* if you will commet out about 2 codes the the links will become horizontal */
+            height: 60px;
+            width: 60px;
+            margin:  0 5px;
+            overflow: hidden;
+            background: #fff;
+            border-radius: 50px;
+            cursor: pointer;
+            box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+            transition: all 0.3s ease-out;
+        }
+        .rightsocial .sociallink:hover{
+            width: 200px;
+        }
+        .rightsocial .sociallink .icon{
+            /* display: inline-block;    (if you do horizontal links)*/ 
+            height: 60px;
+            width: 60px;
+            text-align: center;
+            border-radius: 50px;
+            box-sizing: border-box;
+            line-height: 60px;
+            transition: all 0.3s ease-out;
+        }
+        .rightsocial .sociallink:nth-child(1):hover .icon{
+            background: #4267B2;
+        }
+        .rightsocial .sociallink:nth-child(2):hover .icon{
+            background: #1DA1F2;
+        }
+        .rightsocial .sociallink:nth-child(3):hover .icon{
+            background: #E1306C;
+        }
+        .rightsocial .sociallink:nth-child(4):hover .icon{
+            background: #ff0000;
+        }
+        
+        .rightsocial .sociallink .icon i{
+            font-size: 25px;
+            line-height: 60px;
+            transition: all 0.3s ease-out;
+        }
+        .rightsocial .sociallink:hover .icon i{
+            color: #fff;
+        }
+        .rightsocial .sociallink span{
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 60px;
+            margin-left: 10px;
+            transition: all 0.3s ease-out;
+        }
+        .rightsocial .sociallink:nth-child(1) span{
+            color: #4267B2;
+        }
+        .rightsocial .sociallink:nth-child(2) span{
+            color: #1DA1F2;
+        }
+        .rightsocial .sociallink:nth-child(3) span{
+            color: #E1306C;
+        }
+        .rightsocial .sociallink:nth-child(4) span{
+            color: #ff0000;
+        }
+        
+      
+
+
+        </style>
+    </head>
+    
+    
+    
+    
+    <body>
+
+
+
+        <header>
+            <div class="hlogo">
+                <img class="logo" src="curiosity .png" height="90px" width="200px">
+
+            </div>
+
+
+            <div class="haboutus">
+                <a href="../html codes/curiositymodels.html" style="text-decoration: none;">MODELS</a>
+                <a href="../html codes/curiosityservicecentre.html" style="text-decoration: none;" >SERVICE CENTER</a>
+                <a href="../html codes/curiositystores.html"  style="text-decoration: none;" >STORE</a>
+                <a href="../html codes/curiositycontactus.html"  style="text-decoration: none;">CONTACT US</a>
+            </div>
+
+
+            <div class="hcustomercorner">
+                <a href=""><img src="car search.png" height="50px" width="50px"></a>
+                <a href=""><img src="account white.png" height="30px" width="30px"></a>
+                <a href=""><img src="menu-icon-3-lines-.png" height="30px" width="40px"></a>
+
+            </div>
+            
+
+        </header>
+        
+        
+        
+        
+        
+
+        <div class="container">
+        
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><p class="textimage" id="TIModelName" style="color:black;">Luxury car</p><p class="textimage" id="TIModelQuote" style="color:black;">As silent as a Ghost</p><img src="https://images.pexels.com/photos/3764984/pexels-photo-3764984.jpeg?cs=srgb&dl=pexels-jae-park-3764984.jpg&fm=jpg"></div>
+                        <div class="swiper-slide"><p class="textimage" id="TIModelName" style="color:black;">SUVs</p><p class="textimage" id="TIModelQuote" style="color:black;">No hill is Impossible to climb</p><img src="https://cdn.vox-cdn.com/thumbor/FEBz013WOKQA-54xkg7ITHsclYE=/0x0:5568x3712/1200x800/filters:focal(2339x1411:3229x2301)/cdn.vox-cdn.com/uploads/chorus_image/image/69374295/P90422118_highRes.0.jpg"></div>
+                        <div class="swiper-slide"><p class="textimage" id="TIModelName" style="color:black;">Sports cars</p><p class="textimage" id="TIModelQuote" style="color:black;">No Destination is too far</p><img src="https://cdn.vox-cdn.com/thumbor/j7GsSLOthWgh8Vujt58I6wSz7lA=/0x0:3000x2000/1280x854/cdn.vox-cdn.com/uploads/chorus_image/image/47785391/mclaren-675lt-longtail-0822.0.0.png"></div>
+                        <div class="swiper-slide"><p class="textimage" id="TIModelName" style="color:black;">Vintage cars</p><p class="textimage" id="TIModelQuote" style="color:black;">Potential gave it Legendary Status </p><img src="https://wallpapercave.com/wp/FVFJ7hQ.jpg"></div>
+                        
+                    </div>
+                
+                
+                <!-- pagination -->
+                <div class="swiper-pagination"></div>
+                
+                <!-- navigation buttons -->
+                <!-- <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div> -->
+          
+                <!-- scrollbar -->
+                <!-- <div class="swiper-scrollbar"></div> -->
+          
+            
+                </div>
+        
+            </div>
+
+
+
+            <div class="allmodelsframe">
+                <img src="https://wallpapercave.com/wp/wp3902258.jpg">
+                <div class="topmodels">
+                    <p class="allmodels">TOP MODELS</p>
+                    <button class="shift" id="prev">previous</button>
+                    <button class="shift" id="next">next</button>
+                    <p class="modelname">DEAD</p>
+                    <p class="modelquote">FEEL THE JOURNEY FROM YOUR SOUL</p>
+                    <button class="shift" id="plus">PLUS</button>
+                    <p class="exploremodels">Explore the models</p>
+
+                </div>
+            </div>
+
+
+
+            <div class="costomizedcars">
+                <p class="costcars" id="heading">CONFIGURATOR</p>
+                <p class="costcars"id="body">CREATE YOUR DREAM CAR</p>
+                <p class="costcars" id="backtext">Creat what make you Thrill</p>
+                <img src="https://wallpapers-hub.art/wallpaper-images/457399.jpg">
+                
+            </div>
+            
+            
+            
+            <div class="newsandachivements" id="">
+                <p class="nanda" id="naa">NEWS & ACHIVEMENTS</p>
+                <p class="nanda" id="cu">CURIOSITY UNIVERSE</p>
+                <p class="nanda" id="weare">We are the Infinite</p>
+                <img class="n&a" src="https://singularityhub.com/wp-content/uploads/2020/01/bell-electric-aircraft-evtol-Nexus4EX-1.jpg">
+
+                <p class="highlightednews" id="date">9 JULY 2022</p>
+                <p class="highlightednews" id="headline">PRIME MINISTER NARENDRA MODI VISITED CURIOSITY HEADQUATER IN GAYA,BIHAR</p>
+                <p class="highlightednews" id="headlinedetails">This is a very good news that The Prime minister of india Narendra modi had recently visited 
+                    our head quater located in Gaya Bihar as we have made a car which can run at the speed of sound.
+                </p>
+                <button class="Readmore">READ MORE</button>
+                
+                
+                <div class="news">
+                    <img src="https://i.ytimg.com/vi/F6fhc7I8OP0/maxresdefault.jpg">
+                    <p class="mininews" id="mdate">27 JUNE 2022</p>
+                    <p class="mininews" id="mheadline">LENUS 434G ACHIVE 350KMPH IN 5 SEC</p>
+                    <p class="mininews" id="mheadlinedetails">Hi everyone we have created this car which can achive 350 KMPH in just 5 sec and this is a world record
+                        we have tested this in GAYA in GB road.
+                    </p>
+                    <button class="mReadmore">Read more</button>
+
+                </div>
+                <div class="news">
+                    <img src="https://cdn.mos.cms.futurecdn.net/yXbBbApvJpxnXXPepbkcHc.jpg">
+                    <p class="mininews" id="mdate">8 MARCH 2022</p>
+                    <p class="mininews" id="mheadline">FORZA 239G CLIMBES ON 75 INCLINE</p>
+                    <p class="mininews" id="mheadlinedetails">HI everyone we have created Froza which can climb any inclined plane  because we have made a tire
+                        whice is made from chemaline grip so it can climb on 75 degrees incline floor.
+                    </p>
+                    <button class="mReadmore">Read more</button>
+
+                </div>
+                <button class="RReadmore">READ MORE ABOUT OUR ACHIVEMENTS</button>
+            
+
+            </div>
+        
+
+        
+        
+        <footer>
+            <div class="footercon" id="middlelogo">
+                <img src="curiositylogo .png">
+            </div>
+
+
+            <div class="footercon" id="lefttitle">
+                <p class="llt">Curiosity</p>
+                <p class="llts">We_are_the_infinity</p>
+            </div>
+
+
+            <div class="footercon" id="middlecont">
+                <h2>About us</h2><hr style="background-color: red">
+                <h6 style="width:800px ;">Hi readers this is a Automobile manufacturer company website Curiosity. Here in curiosity we build every type
+                    of cars like Luxury cars, sports cars, suvs, off road cars ,vintage cars and indivisually customised cars. so if you want a car and 
+                    dont know which car is suitable for you then visit our office in GAYA,BIHAR. 
+                </h6>
+                
+            </div>
+
+
+            <!-- <div class="footercon" id="rightsocial"> -->
+            <div class="rightsocial" >
+                <div class="sociallink">
+                    <div class="icon">
+                        <i class="fab fa-facebook-f"></i>
+                    </div>
+                    <span>Facebook</span>
+                </div>
+                <div class="sociallink">
+                    <div class="icon">
+                        <i class="fab fa-twitter"></i>
+                    </div>
+                    <span>Twitter</span>
+                </div>
+                <div class="sociallink">
+                    <div class="icon">
+                        <i class="fab fa-instagram"></i>
+                    </div>    
+                    <span>Instagram</span>
+                </div>
+                <div class="sociallink">
+                    <div class="icon">
+                        <i class="fab fa-youtube"></i>
+                    </div>
+                    <span>Youtube</span>    
+                </div>
+
+            </div>
+            
+                
+
+                
+
+            
+        </footer>
+    
+        <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+        <script>
+            const swiper = new Swiper('.swiper', {
+                autoplay: {
+                    delay:3000,
+                    disableOnintrection: false,
+                }, 
+            // Optional parameters
+            // direction: 'vertical', to scroll vertically
+            loop: true,
+    
+            // pagination (dots at the bottom of the images)
+            // pagination: {
+            // el: '.swiper-pagination',
+            // clickable: true,
+            // },
+    
+            // Navigation arrows
+            // navigation: {
+            // nextEl: '.swiper-button-next',
+            // prevEl: '.swiper-button-prev',},
+    
+            // scrollbar
+            // scrollbar: {
+            // el: '.swiper-scrollbar',},
+            });
+        </script>
+    </body>
+</html>
